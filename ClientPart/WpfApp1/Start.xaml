@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp1.Start"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Start" Height="137.041" Width="217.819"
+        Closing="Window_Closing"
+        WindowStartupLocation="CenterScreen">
+    
+
+    <Grid Margin="0,0,2,0">
+        <Button Content="Подключиться" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="186" Height="29" Background="{x:Null}" Click="Button_Click"/>
+        <TextBox Name="ipTextBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="186"/>
+        <TextBox Name="nameTextBox" HorizontalAlignment="Left" Height="23" Margin="10,38,0,0" TextWrapping="Wrap" Text="Введите ваше имя..." VerticalAlignment="Top" Width="186"/>
+    </Grid>
+</Window>

@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="611.339" Width="1039.093"
+        Closing="Window_Closing">
+
+    <Window.Background>
+        <ImageBrush ImageSource=".\res\background.jpg" />
+    </Window.Background>
+    <Grid>
+        <Image Name="FireButton" Source=".\res\element1.png" HorizontalAlignment="Left" Height="121" Margin="92,142,0,0" VerticalAlignment="Top" Width="121" MouseUp="Image_MouseUp_Fire"/>
+        <Image Name="TreeButton" Source=".\res\element2.png" HorizontalAlignment="Left" Height="121" Margin="39,263,0,0" VerticalAlignment="Top" Width="121" MouseUp="Image_MouseUp_Tree"/>
+        <Image Name="WaterButton" Source=".\res\element3.png" HorizontalAlignment="Left" Height="121" Margin="165,356,0,0" VerticalAlignment="Top" Width="121" MouseUp="Image_MouseUp_Water"/>
+        <Image Name="IronButton" Source=".\res\element4.png" HorizontalAlignment="Left" Height="120" Margin="292,269,0,0" VerticalAlignment="Top" Width="120" MouseUp="Image_MouseUp_Iron"/>
+        <Image Name="EarthButton" Source=".\res\element5.png" HorizontalAlignment="Left" Height="121" Margin="236,142,0,0" VerticalAlignment="Top" Width="120" MouseUp="Image_MouseUp_Earth"/>
+        <Label Name="StatusLabel" HorizontalContentAlignment="Center" Content="Статус" Foreground="White" HorizontalAlignment="Left" Margin="472,21,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.019,0.953" FontSize="20" FontWeight="Bold" Width="537"/>
+        <Button Name="StartGameButton" Content="Начать игру" HorizontalAlignment="Left" Margin="25,21,0,0" VerticalAlignment="Top" Width="148" Background="{x:Null}" BorderBrush="White" Foreground="White" Height="41" FontSize="18" Click="StartGameButton_Click"/>
+        <Button Name="ReadyButton" Content="Готов" HorizontalAlignment="Left" Margin="208,21,0,0" VerticalAlignment="Top" Width="148" Background="{x:Null}" BorderBrush="White" Foreground="White" Height="41" FontSize="18" Click="ReadyButton_Click"/>
+        <Image Source=".\res\element6.png" Name="myChoose" HorizontalAlignment="Left" Height="179" Margin="472,178,0,0" VerticalAlignment="Top" Width="179"/>
+        <Image Name="vsImage" Source=".\res\vs.png" Visibility="Visible" HorizontalAlignment="Left" Height="130" Margin="688,214,0,0" VerticalAlignment="Top" Width="111"/>
+        <Image Source=".\res\element6.png" Name="enemyChoose" HorizontalAlignment="Left" Height="179" Margin="830,178,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label Name="winLooseLabel" HorizontalContentAlignment="Center" Content="Вы победили!" Visibility="Hidden" HorizontalAlignment="Center" Margin="472,64,22,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" Width="537" />
+        <Label Name="descriptionLabel" HorizontalAlignment="Stretch" Margin="472,380,22,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" Grid.Row="0" Width="Auto" RenderTransformOrigin="0.51,0.237" Height="97" >
+            <TextBlock TextWrapping="WrapWithOverflow" Width="424">
+   
+            </TextBlock>
+        </Label>
+        <Label Content="Ваш выбор" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="472,142,0,0" VerticalAlignment="Top" Width="179" BorderBrush="White" Foreground="White" FontSize="16"/>
+        <Label Content="Выбор соперника" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="830,142,0,0" VerticalAlignment="Top" Width="179" BorderBrush="White" Foreground="White" FontSize="16"/>
+        <Label Name="ScoreLabel" HorizontalContentAlignment="Center" Content="" Foreground="White" HorizontalAlignment="Left" Margin="472,477,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.019,0.953" FontSize="20" FontWeight="Bold" Width="537"/>
+    </Grid>
+</Window>
