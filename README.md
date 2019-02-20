@@ -1,2 +1,2 @@
 # NetworkCourse
-Study project
+Study project for university. Made for 1 day)
